@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,MyPack.*,MyPack.DataStructure.*,java.text.*" %>
+	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,ITAD.*,ITAD.DataStructure.*,java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -11,10 +11,10 @@
 
 <!-------------------------------------------------------------------------------------------------------------------------------------->
 
-<jsp:useBean id="eqp" class="MyPack.EQP"/> <jsp:setProperty property="*" name="eqp" />
-<jsp:useBean id="user" class="MyPack.User"/> <jsp:setProperty property="*" name="user" />
-<jsp:useBean id="pc" class="MyPack.PC"/> <jsp:setProperty property="*" name="pc" />
-<jsp:useBean id="ast" class="MyPack.COMast"/> <jsp:setProperty property="*" name="ast" />
+<jsp:useBean id="eqp" class="ITAD.EQP"/> <jsp:setProperty property="*" name="eqp" />
+<jsp:useBean id="user" class="ITAD.User"/> <jsp:setProperty property="*" name="user" />
+<jsp:useBean id="pc" class="ITAD.PC"/> <jsp:setProperty property="*" name="pc" />
+<jsp:useBean id="ast" class="ITAD.COMast"/> <jsp:setProperty property="*" name="ast" />
 
 <%
 	System.out.println("1");

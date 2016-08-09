@@ -4,11 +4,11 @@
 
 <!-------------------------------------------------------------------------------------------------------------------------------------->
 
-<jsp:useBean id="eqp" class="MyPack.EQP"/> <jsp:setProperty property="*" name="eqp" />
-<jsp:useBean id="user" class="MyPack.User"/> <jsp:setProperty property="*" name="user" />
-<jsp:useBean id="pc" class="MyPack.PC"/> <jsp:setProperty property="*" name="pc" />
-<jsp:useBean id="ast" class="MyPack.COMast"/> <jsp:setProperty property="*" name="ast" />
-<jsp:useBean id="hstr" class="MyPack.History"/> <jsp:setProperty property="*" name="hstr" />
+<jsp:useBean id="eqp" class="ITAD.EQP"/> <jsp:setProperty property="*" name="eqp" />
+<jsp:useBean id="user" class="ITAD.User"/> <jsp:setProperty property="*" name="user" />
+<jsp:useBean id="pc" class="ITAD.PC"/> <jsp:setProperty property="*" name="pc" />
+<jsp:useBean id="ast" class="ITAD.COMast"/> <jsp:setProperty property="*" name="ast" />
+<jsp:useBean id="hstr" class="ITAD.History"/> <jsp:setProperty property="*" name="hstr" />
 
 <%
 	int loginidx=0;

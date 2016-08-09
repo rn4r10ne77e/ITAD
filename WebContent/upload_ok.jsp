@@ -5,7 +5,7 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="MyPack.EQP" %>
+<%@ page import="ITAD.EQP" %>
 
 
 <%

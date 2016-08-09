@@ -1,21 +1,17 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,MyPack.*,MyPack.DataStructure.*,java.text.*" %>
+	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,ITAD.*,ITAD.DataStructure.*,java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<html>
 <head>
 
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
-<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" charset="UTF-8" >
+<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
 </head>
 <body>
-
 <form name=LoginForm method=post action=Login_OK.jsp >
 
 <table style="height:100%; width:100%; border-spacing:0; padding:0;" border=1>
@@ -35,8 +31,7 @@
 				</tr>
 				<tr>
 					<td align=left>
-						<center><a href="app-debug.apk">안드로이드 앱 다운로드</a></center>
-					<!--	<a href="ITAD.cer">인증서 다운로드</a>   -->
+						<p align=center><a href="app-debug.apk">안드로이드 앱 다운로드</a></p>
 						<p align=right style="text-color:red"><%= (session.getAttribute("LoginError") != null)?session.getAttribute("LoginError"):" " %></p>
 					</td>
 				</tr>

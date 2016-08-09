@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,MyPack.*,MyPack.DataStructure.*,java.text.*" %>
+	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,ITAD.*,ITAD.DataStructure.*,java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -30,7 +30,7 @@
 	EndRecord = StartRecord + PageCapa - 1;
 %>
 
-<table cellspacing=0 >
+<table>
 <tr><td colspan=4 align=center>거래처 리스트</td></tr>
 <tr><td colspan=4 ><input type="button" value="추가" onclick="popup('pop', 'ppVendorsAdd.jsp','')"></td></tr>
 <tr>

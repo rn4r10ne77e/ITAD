@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,MyPack.*,MyPack.DataStructure.*,java.text.*" %>
+	pageEncoding="UTF-8" import="java.util.*,java.io.*,java.sql.*,ITAD.*,ITAD.DataStructure.*,java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
-<jsp:useBean id="user" class="MyPack.User"/> <jsp:setProperty property="*" name="user" />
+<jsp:useBean id="user" class="ITAD.User"/> <jsp:setProperty property="*" name="user" />
 <%
 	String flag=null, url=null;
 	int USRidx = user.InsertUserData();

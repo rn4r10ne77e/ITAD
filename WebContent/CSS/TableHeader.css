@@ -1,0 +1,13 @@
+.TableHeader
+{
+	width:90px;
+	height:20px;
+	background-color:gray;
+
+}
+
+#ulid, #ulname, #ulstrdept
+{
+	width:90px;
+	height:20px;
+}

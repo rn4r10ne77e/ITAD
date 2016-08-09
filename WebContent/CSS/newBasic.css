@@ -1,0 +1,112 @@
+body, textarea, pre, input, select, option
+{
+	font-family:'fixedsys','µ¸¿ò';
+	font-size:9pt;
+
+}
+html, body, form
+{
+	height:100%;
+	margin:0px;
+}
+th
+{
+	border-radius:5px;
+	height:20px;
+	background-color:#1e2160;
+	color:white;
+	border:1px;
+	border-color:white;
+	border-spacing:1;
+	padding:1;
+	// Width:110px; 
+}
+.infobox
+{
+	border-radius: 5px;
+	border:1px solid grey;
+	box-shadow:2px 2px 4px #c0c0c0;
+	padding:10px;
+}
+table
+{
+	boder-collapse:collapse;
+	border-color:#d7dddf;
+	border:0;
+}
+img
+{
+	border-radius: 5px;
+}
+td
+{
+	height: 20px;
+	border: 0px;
+}
+input[type=button]
+{
+	
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:15px;
+	padding-right:15px;
+	
+    border:1px solid #ccc; 
+    border-radius:4px;
+}
+input[type=text], input[type=password]{
+	padding:3px;
+	border-radius:4px;
+}
+select, textarea
+{
+	padding:3px 3px;
+	border:solid 1px grey;
+	border-radius: 4px;
+	
+}
+input
+{
+	border:1px solid grey;
+	border-radius:4px;
+}
+div
+{
+	box-shadow: 5px 5px 10px grey;
+
+}
+.imggal
+{
+	border: 1px solid grey;
+	width:100%;
+	height:250px;
+}
+
+.lrow
+{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.toptitle
+{
+	background-color:#1e2160;
+ 	
+ }
+ .bottomtitle
+{
+	background-color:#1e2160;
+ 	height:18px;
+ 	line-height:18px; 
+	text-align:right;
+	vertical-align:center;
+ }
+ .infoheader
+ {
+ 	background-color:white;
+ 	border:1px solid black;
+ }
+a:link     {color:#1c1e24;text-decoration:none}
+a:visited  {color:#1c1e24;text-decoration:none}
+a:active   {color:#5f667a;text-decoration:none}
+a:hover    {color:#0080ff;text-decoration:none}

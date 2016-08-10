@@ -6,6 +6,7 @@
 
 <!--  DDC 데스크탑 로그인 -->
 <!--  맥북 BOOTCAMP 로그인 -->
+<!--  맥북 MAX OS 로그 -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>

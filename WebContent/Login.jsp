@@ -4,19 +4,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
+<!--  DDC 데스크탑 로그인 -->
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
+<head> 
 <title></title>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
 </head>
 
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
-
-
-<body>
 
 <body>
 

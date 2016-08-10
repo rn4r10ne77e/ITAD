@@ -5,7 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
-<html>
+<html>  <!--  동기화가 제대로 잘 되나  -->
 <head>
 
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">

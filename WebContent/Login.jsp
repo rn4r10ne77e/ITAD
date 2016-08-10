@@ -5,12 +5,16 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
-<html>  <!--  동기화가 제대로 잘 되나  -->
-<head>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
-<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
 </head>
+
+<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
+
 <body>
 <form name=LoginForm method=post action=Login_OK.jsp >
 

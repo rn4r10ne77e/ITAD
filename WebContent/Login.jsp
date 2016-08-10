@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
 
 
-<body><!--  DDC 데스크탑 으로 로그인 함   -->
+<body>
 
 <body>
 

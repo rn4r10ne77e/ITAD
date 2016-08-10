@@ -15,7 +15,11 @@
 
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
 
+
 <body><!--  DDC 데스크탑 으로 로그인 함   -->
+
+<body>
+
 <form name=LoginForm method=post action=Login_OK.jsp >
 
 <table style="height:100%; width:100%; border-spacing:0; padding:0;" border=1>

@@ -157,11 +157,9 @@ window.onload = function()
 	<tr>
 	<td>
 	자산 상태 : 
-	<input type=radio name="status" value=0 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','0')">미불출</a>
-	<input type=radio name="status" value=1 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','1')">사용중</a>
-	<input type=radio name="status" value=2 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','2')">보관</a>
-	<input type=radio name="status" value=3 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','3')">고장</a>
-	<input type=radio name="status" value=4 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','4')">폐기</a>
+	<input type=radio name="status" value=1 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','1')">사용</a>
+	<input type=radio name="status" value=2 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','2')">미사용</a>
+	<input type=radio name="status" value=3 ><a style="cursor:pointer;"onclick="SetValuetoRadio('status','3')">폐기</a>
 	</td>
 	<td align="right" ><input type="button" value="저장" onclick="document.main.price.value = uncomma(document.main.price.value); Move(this, 'PCEdit_OK.jsp')"></td>
 	</tr>

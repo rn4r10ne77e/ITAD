@@ -326,7 +326,7 @@ function uploadajax( filename, fileformname, idx, no  )
 			
 			if (httpRequest.status === 200)
 			{
-				alert('dddd');
+				
 			}
 			else
 			{

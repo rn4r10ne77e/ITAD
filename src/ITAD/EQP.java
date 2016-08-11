@@ -922,7 +922,7 @@ public class EQP extends DBConn {
 		List<Map<String, Object>> rsetList = new ArrayList<Map<String, Object>>();
 
 		rsetList = Load(qry);
-		System.out.println(qry);
+		
 		for( int i=0 ; i<rsetList.size() ; i++ )
 		{
 			EQPdata EQPobj = new EQPdata();
@@ -1184,7 +1184,7 @@ public class EQP extends DBConn {
 		return data.getTAGstatus();
 	}
 	public void setStatus(int status) {
-		data.setStatus(status);;
+		data.setStatus(status);
 	}
 	public void setSTRstatus(String sTRstatus) {
 		data.setSTRstatus(sTRstatus);

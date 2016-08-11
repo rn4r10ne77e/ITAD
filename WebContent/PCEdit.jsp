@@ -49,6 +49,8 @@ window.onload = function()
 	document.main.vendor.value = ${eqp.vendor}
 	document.main.hiscateg.value = ${hstr.hiscateg}
 
+	
+	
 	SetValuetoRadio("status","${eqp.status}")
 	innerajax( "photoframe", "ppPicture.jsp", "idx=${eqp.idx}" );
 }

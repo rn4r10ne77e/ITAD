@@ -17,6 +17,9 @@
 	MN = DBConn.toUTF8(request.getParameter("MN"));
 	uname = DBConn.toUTF8(request.getParameter("uname"));
 	cmodel = DBConn.toUTF8(request.getParameter("cmodel"));
+
+	if( request.getParameter("Line") != null )		 PageCapa = Integer.parseInt(request.getParameter("Line")); 			else PageCapa = 15;
+	if( request.getParameter("selectpage") != null ) CurrentPage = Integer.parseInt(request.getParameter("selectpage"));	else CurrentPage = 1;
 	
 	if( ini != null && Integer.valueOf((String)ini) == 1 )
 	{
@@ -24,9 +27,6 @@
 		MN = ""; uname =""; cmodel="";
 		SearchList.clear();
 	}
-
-	if( request.getParameter("Line") != null )		 PageCapa = Integer.parseInt(request.getParameter("Line")); 			else PageCapa = 15;
-	if( request.getParameter("selectpage") != null ) CurrentPage = Integer.parseInt(request.getParameter("selectpage"));	else CurrentPage = 1;
 
 	map = new HashMap<String, Object>();	map.put("NAME", "e.location");		map.put("VALUE", location );	map.put("TYPE", "int");		SearchList.add(map);
 	map = new HashMap<String, Object>();	map.put("NAME", "e.dept"    );		map.put("VALUE", dept );		map.put("TYPE", "int");		SearchList.add(map);
@@ -36,7 +36,6 @@
 	map = new HashMap<String, Object>();	map.put("NAME", "u.name");			map.put("VALUE", uname);		map.put("TYPE", "String");	SearchList.add(map);
 	map = new HashMap<String, Object>();	map.put("NAME", "c.model");			map.put("VALUE", cmodel);		map.put("TYPE", "String");	SearchList.add(map);
 
-	
 	
 	List<EQPdata> EQPlist = new ArrayList<EQPdata>();
 	EQPlist = eqp.LoadExpansionEQPlist( SearchList );

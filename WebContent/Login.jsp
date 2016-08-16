@@ -25,9 +25,9 @@
 				</tr>
 				<tr>
 					<td align=right>
-						아이디 :   <input type="text" name="ID" style="width:100px" style="border-radius:5px;"><br>
+						아이디 :  <input type="text" name="ID" style="width:100px" style="border-radius:5px;"><br>
 					    패스워드 : <input type="password" name="Password" style="width:100px"><br><br>
-								   <input type="submit" value="로그인"><br><br>
+								 <input type="submit" value="로그인"><br><br>
 					</td>
 				</tr>
 				<tr>

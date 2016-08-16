@@ -10,9 +10,7 @@
 <title></title>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
 </head>
-
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/newBasic.css" >
-
 <body>
 
 <form name=LoginForm method=post action=Login_OK.jsp >

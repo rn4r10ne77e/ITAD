@@ -188,7 +188,7 @@ public class EQP extends DBConn {
 		History history = new History();
 		int headeridx = 0;
 
-		headeridx = history.insertHeader(index, data.getGenedate(), 1, "占쎈뻿域뱄옙 占쎈쾻嚥∽옙" , "占쎌쁽占쎄텦 甕곕뜇�깈 : "+data.getMN(), addwho );
+		headeridx = history.insertHeader(index, data.getGenedate(), 1, "�뜝�럥六욕윜諭꾩삕 �뜝�럥苡삣슖�댙�삕" , "�뜝�럩�겱�뜝�럡�뀰 �뵓怨뺣쐡占쎄퉰 : "+data.getMN(), addwho );
 
 		history.insertDetail(hstrList, headeridx);
 
@@ -199,9 +199,9 @@ public class EQP extends DBConn {
 	}
 	public int InsertEQPdataByMobile( int USRidx, int PCidx, int addwho )
 	{
-		data.setGenedate(data.getGenedate().replaceAll("占쎈��", "-"));
-		data.setGenedate(data.getGenedate().replaceAll("占쎌뜞", "-"));
-		data.setGenedate(data.getGenedate().replaceAll("占쎌뵬", ""));
+		data.setGenedate(data.getGenedate().replaceAll("�뜝�럥占쏙옙", "-"));
+		data.setGenedate(data.getGenedate().replaceAll("�뜝�럩�쐾", "-"));
+		data.setGenedate(data.getGenedate().replaceAll("�뜝�럩逾�", ""));
 		data.setGenedate(data.getGenedate().replaceAll(" ", ""));
 
 		return InsertEQPdata(USRidx, PCidx, addwho );
@@ -644,7 +644,7 @@ public class EQP extends DBConn {
 			MatchingTable.add(rvVal);
 		}
 
-		tag = "<select name="+Name+" id="+Name+" style='width:130px'><option value=0 selected><b>선택 하세요</b></option>";
+		tag = "<select name="+Name+" id="+Name+" style='width:130px'><option value=0 selected><b>�꽑�깮 �븯�꽭�슂</b></option>";
 		for(int i=0 ; i<MatchingTable.size() ; i++)
 		{
 			tag = tag + "<option value="+MatchingTable.get(i).getValue()+">"+MatchingTable.get(i).getDescription()+"</option>";
@@ -671,7 +671,7 @@ public class EQP extends DBConn {
 			MatchingTable.add(rvVal);			
 		}
 
-		tag = "<select name="+Name+" style='width:110px'><option value=0 selected><b>선택 하세요</b></option>";
+		tag = "<select name="+Name+" style='width:110px'><option value=0 selected><b>�꽑�깮 �븯�꽭�슂</b></option>";
 		for(int i=0 ; i<MatchingTable.size() ; i++)
 		{
 			tag = tag + "<option value="+MatchingTable.get(i).getValue()+">"+MatchingTable.get(i).getDescription()+"</option>";

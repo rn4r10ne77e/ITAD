@@ -206,7 +206,7 @@ public class Dcode extends DBConn {
 		String tag;
 		int maxsize = codelist.size() + 1;
 		
-		tag = "<option value=0 ><b>¼±ÅÃ ÇÏ¼¼¿ä</b></option>";
+		tag = "<option value=0 ><b>ì„ íƒ í•˜ì„¸ìš”</b></option>";
 		for(int i=0 ; i<codelist.size() ; i++)
 		{
 			tag = tag + "<option value="+codelist.get(i).getCode()+">"+codelist.get(i).getDescr()+"</option>";

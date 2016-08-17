@@ -188,7 +188,7 @@ public class EQP extends DBConn {
 		History history = new History();
 		int headeridx = 0;
 
-		headeridx = history.insertHeader(index, data.getGenedate(), 1, "신규 장비 추가" , "관리 번호 : "+data.getMN(), addwho );
+		headeridx = history.insertHeader(index, data.getGenedate(), 1, "신규 등록" , "자산 번호 : "+data.getMN(), addwho );
 
 		history.insertDetail(hstrList, headeridx);
 
@@ -199,9 +199,9 @@ public class EQP extends DBConn {
 	}
 	public int InsertEQPdataByMobile( int USRidx, int PCidx, int addwho )
 	{
-		data.setGenedate(data.getGenedate().replaceAll("�뜝�럥占쏙옙", "-"));
-		data.setGenedate(data.getGenedate().replaceAll("�뜝�럩�쐾", "-"));
-		data.setGenedate(data.getGenedate().replaceAll("�뜝�럩逾�", ""));
+		data.setGenedate(data.getGenedate().replaceAll("년", "-"));
+		data.setGenedate(data.getGenedate().replaceAll("월", "-"));
+		data.setGenedate(data.getGenedate().replaceAll("일", ""));
 		data.setGenedate(data.getGenedate().replaceAll(" ", ""));
 
 		return InsertEQPdata(USRidx, PCidx, addwho );

@@ -644,7 +644,7 @@ public class EQP extends DBConn {
 			MatchingTable.add(rvVal);
 		}
 
-		tag = "<select name="+Name+" id="+Name+" style='width:130px'><option value=0 selected><b>�꽑�깮 �븯�꽭�슂</b></option>";
+		tag = "<select name="+Name+" id="+Name+" style='width:130px'><option value=0 selected><b>선택 하세요</b></option>";
 		for(int i=0 ; i<MatchingTable.size() ; i++)
 		{
 			tag = tag + "<option value="+MatchingTable.get(i).getValue()+">"+MatchingTable.get(i).getDescription()+"</option>";
@@ -671,7 +671,7 @@ public class EQP extends DBConn {
 			MatchingTable.add(rvVal);			
 		}
 
-		tag = "<select name="+Name+" style='width:110px'><option value=0 selected><b>�꽑�깮 �븯�꽭�슂</b></option>";
+		tag = "<select name="+Name+" style='width:110px'><option value=0 selected><b>선택 하세요</b></option>";
 		for(int i=0 ; i<MatchingTable.size() ; i++)
 		{
 			tag = tag + "<option value="+MatchingTable.get(i).getValue()+">"+MatchingTable.get(i).getDescription()+"</option>";

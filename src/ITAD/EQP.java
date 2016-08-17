@@ -204,7 +204,7 @@ public class EQP extends DBConn {
 		data.setGenedate(data.getGenedate().replaceAll("일", ""));
 		data.setGenedate(data.getGenedate().replaceAll(" ", ""));
 
-		return InsertEQPdata(USRidx, PCidx, addwho );
+		return InsertEQPdata(USRidx, PCidx, addwho );// 한글 더이상 깨지면 안됨...
 	}
 
 	public boolean LoadEQPdata(int IDX)

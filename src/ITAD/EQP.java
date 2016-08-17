@@ -188,7 +188,7 @@ public class EQP extends DBConn {
 		History history = new History();
 		int headeridx = 0;
 
-		headeridx = history.insertHeader(index, data.getGenedate(), 1, "�뜝�럥六욕윜諭꾩삕 �뜝�럥苡삣슖�댙�삕" , "�뜝�럩�겱�뜝�럡�뀰 �뵓怨뺣쐡占쎄퉰 : "+data.getMN(), addwho );
+		headeridx = history.insertHeader(index, data.getGenedate(), 1, "신규 장비 추가" , "관리 번호 : "+data.getMN(), addwho );
 
 		history.insertDetail(hstrList, headeridx);
 

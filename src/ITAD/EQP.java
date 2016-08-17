@@ -176,7 +176,7 @@ public class EQP extends DBConn {
 			hstrDetail.setValueto(toUTF8(data.getAdmin2()));
 			hstrList.add(hstrDetail);
 		}
-		if( data.getPictarget() != null ) 
+		if( data.getPictarget() != null )
 		{
 			hstrDetail = new HISTORYDETAIL();
 			hstrDetail.setItem("PICTARGET");

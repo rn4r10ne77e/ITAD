@@ -10,6 +10,7 @@ import javax.sql.DataSource;
 
 public class DBConn
 {
+	boolean connectionflag=true;
 	String connectionUrl=null; String Qry=null, ErrMsg=null;
 	Connection conn=null;
 	Statement stmt=null;
@@ -25,6 +26,16 @@ public class DBConn
 		SPW = "@Wsx3edc";
 		DBname = "ITAD";	
 	}
+	public DBConn(boolean flag)
+	{
+		connectionflag = flag;
+		SIP = "localhost";
+		Port = "1433";
+		SID = "YS";
+		SPW = "@Wsx3edc";
+		DBname = "ITAD";	
+	}
+	
 	public DBConn(String strIP, String strPORT, String strID, String strPW, String strDBname )
 	{
 		this.SIP = strIP;
@@ -131,13 +142,18 @@ public class DBConn
 	{
 		try
 		{
-			Context context = new InitialContext();
-			DataSource source = (DataSource)context.lookup("java:comp/env/jdbc/sqlserver");
-			conn = source.getConnection();
-			/*
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			conn = DriverManager.getConnection("jdbc:sqlserver://"+SIP+":"+Port+";user="+SID+";password="+SPW+";databasename="+DBname);
-			*/
+			if( connectionflag )
+			{
+				Context context = new InitialContext();
+				DataSource source = (DataSource)context.lookup("java:comp/env/jdbc/sqlserver");
+				conn = source.getConnection();
+			}
+			else
+			{
+				
+				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+				conn = DriverManager.getConnection("jdbc:sqlserver://"+SIP+":"+Port+";user="+SID+";password="+SPW+";databasename="+DBname);
+			}
 			stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);// this ResultSet option need method last()
 		}
 		catch(Exception e)

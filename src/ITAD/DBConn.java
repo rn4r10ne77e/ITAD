@@ -165,8 +165,10 @@ public class DBConn
 		}
 	}
 
-
-
+	public Connection getConnection()
+	{
+		return conn;		
+	}
 	
 	public int GetRecordCnt()
 	{

@@ -58,9 +58,8 @@ FileOutputStream fileoutputstream=new FileOutputStream("D:\\roqkffhwk2.xlsx");
 //파일을 쓴다
 workbook.write(fileoutputstream);
 //필수로 닫아주어야함 
-
-workbook.close();
 fileoutputstream.close();
+
 System.out.println("엑셀파일생성성공");
 %>
 </body>

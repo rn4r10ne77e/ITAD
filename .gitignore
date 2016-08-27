@@ -4,4 +4,8 @@
 .project
 .settings
 .DS_Store
+<<<<<<< HEAD
 .idea
+=======
+/BUILD/
+>>>>>>> refs/remotes/origin/master

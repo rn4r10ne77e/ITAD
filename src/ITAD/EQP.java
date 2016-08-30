@@ -1,5 +1,6 @@
 package ITAD;
 
+import java.io.Serializable;
 import java.util.*;
 
 import ITAD.DataStructure.EQPdata;

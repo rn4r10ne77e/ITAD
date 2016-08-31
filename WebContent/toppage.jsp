@@ -50,7 +50,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="toptitle" colspan=3 valign="bottom" height=10>
+					<td class="toptitle" colspan=2 valign="bottom" height=10>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						 <span style="font-size:16pt; color:white; font-family:Arial; font-weight:bold;">Schenker Korea Asset Management System</span>
 						<p align=right style="color:white">안녕하세요, ${LoginedUser.name} 님이 로그인 되었습니다.</p>
@@ -58,29 +58,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td valign=top width="150" height="100%" align=center><br>
-						<table class="infobox" width="135">
-						<tr>
-						<td align=left width="120">
-
-						&nbsp;&nbsp;&nbsp; 자산 메뉴 <br><br>
-						&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'Enrollment.jsp')">자산 추가</a><br><br>
-						&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'PCList.jsp?initialize=1')">자산 조회</a><br>
-						</td>
-						</tr>
-						</table><br>
-						
-						<c:if test="${LoginedUser.usrDept eq 1}">
-						<table class="infobox" width="135">
-						<tr>
-						<td align=left width="120">
-						&nbsp;&nbsp;&nbsp; 사용자 메뉴 <br><br>
-						&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'UserList.jsp')">추가 및 조회</a><br>
-						</td>
-						</tr>
-						</table><br>
-						</c:if>
+				
+					<%@ include file="left.jsp" %>
 					
-						<!-- <a style="cursor:pointer;" onclick="Move(this,'Setup.jsp')"> 설정 </a><br><br>  -->
-					</td>
+					
 					<td valign=top height="100%" ><br>

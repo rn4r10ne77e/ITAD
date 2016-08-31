@@ -150,7 +150,6 @@ public class DBConn
 			}
 			else
 			{
-				
 				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 				conn = DriverManager.getConnection("jdbc:sqlserver://"+SIP+":"+Port+";user="+SID+";password="+SPW+";databasename="+DBname);
 			}

@@ -1,4 +1,4 @@
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 <% pageContext.setAttribute("newLineChar", "\n"); %>
 <%
@@ -37,7 +37,7 @@ window.onload = function()
 	document.main.eqpcateg.onchange = function()
 	{
 		var param = "parent="+document.main.eqpcateg.value;
-		innerajax( "subcate", "subcate.jsp", param );
+		innerajax( "subcate", "../subcate.jsp", param );
 	}
 
 	document.main.eqpcateg.value = ${eqp.eqpcateg}
@@ -194,4 +194,4 @@ window.onload = function()
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<%@ include file="bottompage.jsp"%>
+<%@ include file="../bottompage.jsp"%>

@@ -55,24 +55,24 @@ window.onload = function()
 	document.main.cmodel.value = 		"<%= ( cmodel != null )?cmodel:"" %>";
 
 	var param = "parent="+document.main.eqpcateg.value;
-	innerajax( "subcate", "/subcate.jsp?TableName=EQPCATEG", param );
+	innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
 
 	document.main.subcate.value = <%= ( subcategory != null )?subcategory:0 %>;
 
 	document.main.eqpcateg.onchange = function()
 	{
 		var param = "parent="+document.main.eqpcateg.value;
-		innerajax( "subcate", "/subcate.jsp?TableName=EQPCATEG", param );
+		innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
 	}
 	
 	var param2 = "parent="+document.main.location.value;
-	innerajax( "MNDept", "/subcate.jsp?TableName=LOCXDEPT", param2 );
+	innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
 
 	document.main.MNDept.value = 	 <%= ( dept != null )?dept:0 %>;
 	document.main.location.onchange = function()
 	{
 		var param2 = "parent="+document.main.location.value;
-		innerajax( "MNDept", "/subcate.jsp?TableName=LOCXDEPT", param2 );
+		innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
 	}
 
 	var obj = document.getElementsByClassName('price');
@@ -105,12 +105,12 @@ window.onload = function()
 <tr>
 	<td align=right style="width:70px;" colspan=7>
 	<b> 모델명 :</b>
-	<input type="text" name="cmodel" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, './PCList.jsp');">  
+	<input type="text" name="cmodel" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, 'Contents/PCList.jsp');">  
 	<b>사용자 :</b>
-	<input type="text" name="uname" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, './PCList.jsp');">  
+	<input type="text" name="uname" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, 'Contents/PCList.jsp');">  
 	<b>관리번호 :</b>
-	<input type="text" name="MN" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, './PCList.jsp');">
-	<input type="button" value="검색" onclick="Move(this, './PCList.jsp')">
+	<input type="text" name="MN" value="" onKeydown="javascript:if(event.keyCode == 13) Move(this, 'Contents/PCList.jsp');">
+	<input type="button" value="검색" onclick="Move(this, 'Contents/PCList.jsp')">
 	</td>
 </tr>
 </table>
@@ -119,7 +119,7 @@ window.onload = function()
 
 <table class="infobox" style="width:100%; table-layout:inherit;">
 <tr>
-<td colspan=6>자산 목록(<%=EQPlist.size() %>)</td> <td colspan=1 align=right>Line : <input type=text name="Line" value=<%=PageCapa%> style="width:20px"onKeydown="javascript:if(event.keyCode == 13) Move(this, './PCList.jsp');" ></td>
+<td colspan=6>자산 목록(<%=EQPlist.size() %>)</td> <td colspan=1 align=right>Line : <input type=text name="Line" value=<%=PageCapa%> style="width:20px"onKeydown="javascript:if(event.keyCode == 13) Move(this, 'Contents/PCList.jsp');" ></td>
 </tr>
 
 <tr>
@@ -134,7 +134,7 @@ window.onload = function()
 </tr>
 
 <c:forEach var="index" items="<%=EQPlist %>" begin="<%=StartRecord %>" end="<%=EndRecord %>">
-<tr style="cursor:pointer;"  onmouseover="showProp(this, this.cells)" onclick="Move(this,'./PCEdit.jsp')">
+<tr style="cursor:pointer;"  onmouseover="showProp(this, this.cells)" onclick="Move(this,'PCEdit.jsp')">
 <td class="lrow" style="display:none" ><input type="radio" name="SelectValue" value="${index.idx}" style="display:none" ></td>
 <td class="lrow">${index.strCategory}</td>
 <td class="lrow">${index.strSubcategory}</td>
@@ -156,13 +156,13 @@ window.onload = function()
 	<td name="pagenumber">
 	
 	<c:if test="${page+no-3 > 0 && page+no-3 <= maxpage}">
-		<input type="button" onclick = "MovePage(this, './PCList.jsp')" value="${page+no-3}">
+		<input type="button" onclick = "MovePage(this, 'Contents/PCList.jsp')" value="${page+no-3}">
 	</c:if>
 	
 	</td>
 	</c:forEach>
 	<c:if test="${maxpage > 1}">
-	<td> ... </td><td><input type="button" onclick = "MovePage(this, './PCList.jsp')" value="${maxpage}"></td>
+	<td> ... </td><td><input type="button" onclick = "MovePage(this, 'Contents/PCList.jsp')" value="${maxpage}"></td>
 	</c:if>
 	</tr>
 </table>

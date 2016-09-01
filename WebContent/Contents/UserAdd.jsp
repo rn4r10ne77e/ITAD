@@ -13,7 +13,6 @@ window.onload=function()
 <table class="infobox">
 	<tr><td colspan=6 >신규 등록 <input type=hidden name="idx" value="${user.idx}"></td></tr>
 	<tr>
-		
 		<td align=right>이름 : </td><td><input type=text name="name" style="width:80px" value="${user.name}"></td>
 		<td align=right>직책 : </td><td>${user.TAGusrPosition}</td>
 		<td align=right>소속 : </td><td>${user.TAGusrDept}</td>

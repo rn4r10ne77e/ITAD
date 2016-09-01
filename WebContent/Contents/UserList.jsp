@@ -1,4 +1,4 @@
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 <%!
 	int PageCapa=10, MaxPage, StartRecord, EndRecord, CurrentPage;
@@ -136,4 +136,4 @@
 <br>
 
 
-<%@ include file="bottompage.jsp" %>
+<%@ include file="../bottompage.jsp" %>

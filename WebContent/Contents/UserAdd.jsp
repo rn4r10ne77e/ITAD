@@ -1,5 +1,5 @@
 <%@ page pageEncoding="UTF-8" %>
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%	User user = new User(); %>
 <c:set value="<%=user%>" var="user" scope="page" />
 
@@ -30,4 +30,4 @@ window.onload=function()
 	</tr>
 </table>
 
-<%@ include file="/bottompage.jsp" %>
+<%@ include file="../bottompage.jsp" %>

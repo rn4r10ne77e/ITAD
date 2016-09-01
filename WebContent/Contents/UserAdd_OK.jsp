@@ -12,6 +12,8 @@
 	
 	if( USRidx != 0) flag = flag + "Creation User successfully ";
 	else flag = flag + "Failed to create user";
+	
+	
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

@@ -1,4 +1,4 @@
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 
 <% pageContext.setAttribute("newLineChar",  "\n"); %>

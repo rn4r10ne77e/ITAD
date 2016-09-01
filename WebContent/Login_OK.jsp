@@ -16,9 +16,9 @@ window.onload = function()
 			session.setAttribute("LoginStatus", 1);
 			session.setAttribute("LoginedUser", usr.getIdx());
 
-			url="PCList.jsp";
+			url="Contents/PCList.jsp";
 			session.setAttribute("LoginError", null); // Clear
-			if(usr.getPermission() == 2) url="PCList.jsp";
+			if(usr.getPermission() == 2) url="Contents/PCList.jsp";
 		}
 		else
 		{

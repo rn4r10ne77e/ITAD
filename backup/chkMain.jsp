@@ -6,7 +6,7 @@
 	if( request.getParameter("DIR") != null ) dir = request.getParameter("DIR");
 	else dir = getServletContext().getRealPath("/");
 	
-	//request.getParameter("var");
+	//request.getParameter("var");dfdf
 	//타겟 디렉토리
 	//out.print(dir);
 

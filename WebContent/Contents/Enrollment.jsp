@@ -1,4 +1,4 @@
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 
 <%
@@ -17,21 +17,21 @@
 window.onload = function()
 {
 	var param = "parent="+document.main.eqpcateg.value;
-	innerajax( "subcate", "subcate.jsp?TableName=EQPCATEG", param );
+	innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
 
 	document.main.eqpcateg.onchange = function()
 	{
 		var param = "parent="+document.main.eqpcateg.value;
-		innerajax( "subcate", "subcate.jsp?TableName=EQPCATEG", param );
+		innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
 	}
 	
 	var param2 = "parent="+document.main.location.value;
-	innerajax( "MNDept", "subcate.jsp?TableName=LOCXDEPT", param2 );
+	innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
 
 	document.main.location.onchange = function()
 	{
 		var param2 = "parent="+document.main.location.value;
-		innerajax( "MNDept", "subcate.jsp?TableName=LOCXDEPT", param2 );
+		innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
 	}
 
 	var obj = document.getElementsByClassName('price');
@@ -39,7 +39,7 @@ window.onload = function()
 	{
 		obj[i].innerHTML = comma(obj[i].innerHTML);
 	}
-	innerajax( "photoframe", "ppPicture.jsp","idx=0" );
+	innerajax( "photoframe", "../ppPicture.jsp","idx=0" );
 }
 </script>
 
@@ -61,7 +61,7 @@ window.onload = function()
 	<table class="infobox" style="width:100%;">
 		<tr>
 			<td colspan=3>기본 정보 (자산번호 : ${eqp.MN})<input type=hidden name="idx" value="${eqp.idx}"></td>
-			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', 'ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
+			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', '../ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
 		</tr>
 		
 		<tr>
@@ -116,6 +116,6 @@ window.onload = function()
 </table>
 
 
-<input type="button" value="등록" onclick="document.main.price.value = uncomma(document.main.price.value); Move(this, 'Enrollment_OK.jsp')">
+<input type="button" value="등록" onclick="document.main.price.value = uncomma(document.main.price.value); Move(this, '../Enrollment_OK.jsp')">
 
-<%@ include file="bottompage.jsp"%>
+<%@ include file="../bottompage.jsp"%>

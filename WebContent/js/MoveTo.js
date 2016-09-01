@@ -348,7 +348,7 @@ function inputNumberFormat(obj) {
     obj.value = comma(uncomma(obj.value));
 }
 
-function VendorAdd()
+function VendorAdd( filename )
 {
 	var descr = document.getElementById("descr").value;
 	var corpno = document.getElementById("corpno").value;
@@ -359,9 +359,9 @@ function VendorAdd()
 	popup('pop', 'ppVendorsAdd_OK.jsp', param );
 	popup('pop', 'ppVendors.jsp', '' );
 	
-	innerajax('vendorplace','changevendor.jsp','');
+	innerajax('vendorplace',filename,''); // filename 워래 ppChangevendor.jsp 파일이 하드코딩 되어 있었음..
 }
-function VendorEdit()
+function VendorEdit( filename )
 {
 	var vidx = document.getElementById("vidx").value;
 	var descr = document.getElementById("descr").value;
@@ -371,9 +371,9 @@ function VendorEdit()
 	var param = "idx="+vidx+"&descr="+descr+"&corpno="+corpno+"&manager="+manager;
 	
 	popup('pop', 'ppVendorsEdit_OK.jsp', param );
-	popup('pop', 'ppVendors.jsp', '' );
+	popup('pop', filename, '' ); // filename 워래 ppChangevendor.jsp 파일이 하드코딩 되어 있었음..
 	
-	innerajax('vendorplace','changevendor.jsp','');
+	innerajax('vendorplace', filename ,'');
 }
 function VendorSelect( tds )
 {

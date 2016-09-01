@@ -49,11 +49,11 @@
 	
 %>
 
-<form name="fail" action="Enrollment.jsp" method="post" >
+<form name="fail" action="../Enrollment.jsp" method="post" >
 <input type=hidden name="msg" value="<%=msg%>">
 </form>
 
-<form name="success" action="PCview.jsp" method="post" >
+<form name="success" action="../Enrollment_Confirm.jsp" method="post" >
 <input type=hidden name="SelectValue" value="<%= eqpidx %>">
 </form>
 

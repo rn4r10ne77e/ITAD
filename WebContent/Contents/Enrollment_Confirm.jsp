@@ -1,4 +1,4 @@
-<%@ include file="toppage.jsp" %>
+<%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 
 <% pageContext.setAttribute("newLineChar",  "\n"); %>
@@ -77,7 +77,7 @@ window.onload = function()
 </table>
 </td>
 </tr>
-<tr><td colspan=2 align=right><input type="button" value="확인" onclick="Move(this, 'PCList.jsp')"></td>
+<tr><td colspan=2 align=right><input type="button" value="확인" onclick="Move(this, '../PCList.jsp')"></td>
 </table>
 
-<%@ include file="bottompage.jsp"%>
+<%@ include file="../bottompage.jsp"%>

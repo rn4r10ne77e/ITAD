@@ -27,7 +27,7 @@
 		LoginedUser.LoadUserData(idx);
 	}
 	if( session.getAttribute("LoginStatus") == null )
-		out.print("alert('세션이 만료되었거나 잘못된 접근 입니다. \\n로그인 페이지로 이동 합니다.');location.href='Login.jsp';"); 
+		out.print("alert('세션이 만료되었거나 잘못된 접근 입니다. \\n로그인 페이지로 이동 합니다.');location.href='"+request.getContextPath()+"/Login.jsp';"); 
 %>
 </script>
 <c:set value="<%= LoginedUser %>" var="LoginedUser" scope="page" />

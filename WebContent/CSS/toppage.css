@@ -1,0 +1,53 @@
+#page_container{
+	
+	height:100%;
+	width:100%;
+	border-spacing:0;
+	padding:0;
+}
+
+#contents_area{
+
+	width:1024px; 
+	border:1px solid black; 
+	border-left: 1px solid; 
+	border-right: 1px solid; 
+	border-top: 1px solid; 
+	border-bottom: 0px none;
+	valign:top;
+}
+#content{ 
+	
+	width:1024px;
+	border-spacing:0; 
+	padding:0;
+}
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------->
+
+.logo_field{
+	
+	height:10;
+	bgcolor:#ffffff;
+}
+.logo_img{
+	
+	float:right;
+}
+
+.toptitle_field{
+	
+	background-color:#1e2160;
+ 	valign:bottom; 
+ 	height:10;
+ }
+ 
+.toptitle_font{
+	
+	font-size:16pt; 
+	color:white; 
+	font-family:Arial; 
+	font-weight:bold;
+}

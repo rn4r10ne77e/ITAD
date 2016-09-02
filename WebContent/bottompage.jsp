@@ -1,8 +1,8 @@
 
 			<!-- 좀 제발 워닝 좀 뜨지마라 -->			
 					</td>
-					<td id="rpopup" valign=top align=center height="100%">
-					</td>
+					<!-- <td id="rpopup" valign=top align=center height="100%">
+					</td> -->
 				</tr>
 
 			</table>

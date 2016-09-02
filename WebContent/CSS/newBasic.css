@@ -2,7 +2,11 @@ body, textarea, pre, input, select, option
 {
 	font-family:'fixedsys','µ¸¿ò';
 	font-size:9pt;
+	
 
+}
+body{
+	overflow:scroll;
 }
 html, body, form
 {
@@ -88,11 +92,8 @@ div
     overflow: hidden;
     text-overflow:ellipsis;
 }
-.toptitle
-{
-	background-color:#1e2160;
- 	
- }
+
+
  .bottomtitle
 {
 	background-color:#1e2160;

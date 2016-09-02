@@ -389,9 +389,9 @@ function VendorSelect( tds )
 	popup('pop','ppVendorsEdit.jsp',param);
 }
 
-function Logout()
+function Logout( filename )
 {
-	location.href='Login.jsp';
+	location.href=filename;
 }
 
 function ViewDetail(trElement, cells)

@@ -8,12 +8,9 @@
 	{
 		int idx = Integer.parseInt(session.getAttribute("LoginedUser").toString());
 		LoginedUser.LoadUserData(idx);
+		out.print(LoginedUser.getName());
 	}
+	else 
 	
 	
-	out.print(LoginedUser.getName());
-	
-	//if( session.getAttribute("LoginStatus") == null ) 
 %>
-
-<%= LoginedUser.getName() %>

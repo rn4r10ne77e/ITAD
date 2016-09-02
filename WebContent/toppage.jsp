@@ -2,31 +2,30 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<c:set var="root" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 <head>
-
+<title>KAMS DBschenker Korea Asset Management Program</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/base.css" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/TableHeader.css" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/PopupLayer.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/toppage.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/base.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/TableHeader.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/PopupLayer.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/toppage.css" />
 
 
-<script src="${pageContext.request.contextPath}/js/Rollover.js"></script>
-<script src="${pageContext.request.contextPath}/js/MoveTo.js"></script>
-
-<script src="${pageContext.request.contextPath}/js/toppage.js"></script>
-
-
+<script src="${root}/js/Rollover.js"></script>
+<script src="${root}/js/MoveTo.js"></script>
+<script src="${root}/js/toppage.js"></script>
 
 
 </head>
 <body>
+
 
 
 <div id="pop" > 빈레이어 </div>
@@ -39,7 +38,7 @@
 			<table id="content">
 				<tr>
 					<td class="logo_field" colspan=2>
-						<img class="logo_img" src="${pageContext.request.contextPath}/images/logo.png" >
+						<img class="logo_img" src="${root}/images/logo.png" >
 					</td>
 				</tr>
 				<tr>

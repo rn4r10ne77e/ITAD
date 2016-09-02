@@ -10,7 +10,7 @@
 		LoginedUser.LoadUserData(idx);
 		out.print(LoginedUser.getName());
 	}
-	else 
 	
+	out.print(session.getAttribute("LoginStatus"));
 	
 %>

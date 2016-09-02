@@ -202,8 +202,11 @@ function popup2( loc, filename, param )
 		}
 	}
 }
-function innerajax( loc, filename, params )
+
+
+function getInnerajax( filename, params )
 {
+	var rt_val;
 	var httpRequest;
 	makeRequest( filename )
 	
@@ -253,18 +256,18 @@ function innerajax( loc, filename, params )
 		{
 			if (httpRequest.status === 200)
 			{
-				document.body.onclick = null;
-								
-				document.getElementById(loc).innerHTML = "";
-				document.getElementById(loc).innerHTML = httpRequest.responseText;
+				rt_val = httpRequest.responseText;
 			}
 			else
 			{
 				alert('There was a problem with the request.');
 			}
 		}
-	}	
+	}
+	
+	return rt_val;
 }
+
 function uploadajax( filename, fileformname, idx, no  )
 {
 	var formdata = new FormData();
@@ -335,6 +338,71 @@ function uploadajax( filename, fileformname, idx, no  )
 		}
 	}	
 }
+
+function innerajax( loc, filename, params )
+{
+	var httpRequest;
+	makeRequest( filename )
+	
+	function makeRequest(url)
+	{
+	    if (window.XMLHttpRequest) 
+	    { // Mozilla, Safari, ...
+			httpRequest = new XMLHttpRequest();
+	    }
+	    else if (window.ActiveXObject)
+	    { // IE
+			try
+	    	{
+				httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+			} 
+			catch (e) 
+			{
+				try
+				{
+					httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+	        	}
+	        	catch(e){}
+			}
+		}
+	
+	    if (!httpRequest)
+	    {
+			alert('Giving up :( Cannot create an XMLHTTP instance');
+			return false;
+		}
+		
+		httpRequest.open('POST', url, false);
+		
+		httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		httpRequest.setRequestHeader("Content-length", params.length);
+		httpRequest.setRequestHeader("Connection", "close");
+		
+		httpRequest.onreadystatechange = alertContents;
+		
+		httpRequest.send(params+"&timestamp="+new Date().getTime());
+		
+	}
+
+	function alertContents()
+	{
+		if (httpRequest.readyState === 4)
+		{
+			if (httpRequest.status === 200)
+			{
+				document.body.onclick = null;
+								
+				document.getElementById(loc).innerHTML = "";
+				document.getElementById(loc).innerHTML = httpRequest.responseText;
+			}
+			else
+			{
+				alert('There was a problem with the request.');
+			}
+		}
+	}	
+}
+
 
 function comma(str) {
     str = String(str);
@@ -415,6 +483,8 @@ function ViewDetail(trElement, cells)
 	
 	innerajax(loc+"detail", "ppHistoryDetail.jsp","IDX="+loc);
 }
+
+
 function SetValuetoRadio( name, val )
 {
 	var radiobutton = document.getElementsByName(name);

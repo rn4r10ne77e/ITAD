@@ -15,7 +15,7 @@
 		</tr>
 		</table><br>
 		
-		<c:if test="${LoginedUser.usrDept eq 1}">
+
 		<table class="infobox" width="135">
 		<tr>
 		<td align=left width="120">
@@ -24,7 +24,7 @@
 		</td>
 		</tr>
 		</table><br>
-		</c:if>
+		 
 	
 		<!-- <a style="cursor:pointer;" onclick="Move(this,'Setup.jsp')"> 설정 </a><br><br>  -->
 	</td>

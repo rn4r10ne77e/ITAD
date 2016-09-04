@@ -45,7 +45,7 @@
 			}
 		}
 
-		if( !flag ) out.print("<td><img src='images/noimg.png' class='imggal'>");
+		if( !flag ) out.print("<td><img src='"+request.getContextPath()+"/images/noimg.png' class='imggal'>");
 		out.print("<input type='file' name='uploadfile"+i+"' id='uploadfile"+i+"' onchange=\"uploadajax('upload_ok.jsp','uploadfile"+i+"','"+idx+"','"+i+"');popup2('pop', 'ppPictures.jsp','idx="+idx+"' );\" > <br> ");
 	}
 

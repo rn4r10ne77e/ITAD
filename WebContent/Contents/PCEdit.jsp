@@ -37,7 +37,7 @@ window.onload = function()
 	document.main.eqpcateg.onchange = function()
 	{
 		var param = "parent="+document.main.eqpcateg.value;
-		innerajax( "subcate", "../subcate.jsp", param );
+		innerajax( "subcate", "../PeacePages/ppCodeLookup.jsp", param );
 	}
 
 	document.main.eqpcateg.value = ${eqp.eqpcateg}
@@ -52,7 +52,7 @@ window.onload = function()
 	
 	
 	SetValuetoRadio("status","${eqp.status}")
-	innerajax( "photoframe", "../ppPicture.jsp", "idx=${eqp.idx}" );
+	innerajax( "photoframe", "../PeacePages/ppPicture.jsp", "idx=${eqp.idx}" );
 }
 </script>
 
@@ -62,7 +62,7 @@ window.onload = function()
 	<table class="infobox" style="width:100%;">
 		<tr>
 			<td colspan=3 >기본 정보 (자산번호 : ${eqp.MN})<input type=hidden name="idx" value="${eqp.idx}"></td>
-			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', '../ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
+			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', '../PeacePages/ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
 		</tr>
 		
 		<tr>

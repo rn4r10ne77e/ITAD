@@ -42,7 +42,7 @@
     		}
     	}
 	}
-	else out.print("<td><img src='images/noimg.png' style='width:120px; height:120px'></td>");
+	else out.print("<td><img src='"+request.getContextPath()+"/images/noimg.png' style='width:120px; height:120px'></td>");
 %>
 </tr>
 

@@ -5,7 +5,6 @@
 	session.setAttribute("EQPListCurrentPage", request.getParameter("selectpage"));
 	session.setAttribute("EQPListSearchColumn", request.getParameter("searchcolumn"));
 	session.setAttribute("EQPListSearchKeyword", request.getParameter("searchkeyword"));
-
 %>
 
 <script>

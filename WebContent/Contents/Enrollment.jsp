@@ -13,35 +13,7 @@
 <c:set value="<%=user%>" var="user" scope="page" />
 <c:set value="<%=eqp%>" var="eqp" scope="page" />
 
-<script>
-window.onload = function()
-{
-	var param = "parent="+document.main.eqpcateg.value;
-	innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
-
-	document.main.eqpcateg.onchange = function()
-	{
-		var param = "parent="+document.main.eqpcateg.value;
-		innerajax( "subcate", "../subcate.jsp?TableName=EQPCATEG", param );
-	}
-	
-	var param2 = "parent="+document.main.location.value;
-	innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
-
-	document.main.location.onchange = function()
-	{
-		var param2 = "parent="+document.main.location.value;
-		innerajax( "MNDept", "../subcate.jsp?TableName=LOCXDEPT", param2 );
-	}
-
-	var obj = document.getElementsByClassName('price');
-	for( var i=0 ; i<obj.length ; i++ )
-	{
-		obj[i].innerHTML = comma(obj[i].innerHTML);
-	}
-	innerajax( "photoframe", "../ppPicture.jsp","idx=0" );
-}
-</script>
+<script src="${root}/js/Enrollment.js"></script>
 
 
 <table style="width:99%" class=infobox ><tr><td>
@@ -61,7 +33,7 @@ window.onload = function()
 	<table class="infobox" style="width:100%;">
 		<tr>
 			<td colspan=3>기본 정보 (자산번호 : ${eqp.MN})<input type=hidden name="idx" value="${eqp.idx}"></td>
-			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', '../ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
+			<td rowspan=6 style="border:1px;" align=right><a onclick="popup('pop', '../PeacePages/ppPictures.jsp','idx=${eqp.idx}' )" id="photoframe"></a></td>
 		</tr>
 		
 		<tr>

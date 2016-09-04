@@ -2,35 +2,43 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<c:set var="root" value="${pageContext.request.contextPath}" />
+<%
+	String receivedDevice = request.getParameter("condev");
+	String Array[]={"iPhone", "iPod", "BlackBerry", "Android", "Windows CE", "LG", "MOT", "SAMSUNG", "SonyEricsson"}, mode="PC";
+
+	if( receivedDevice != null )
+		for( String idx : Array )
+			if( idx.equals(receivedDevice) )	mode = "Mobile";
+%>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
 <head>
 <title>KAMS DBschenker Korea Asset Management Program</title>
+
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-<link rel="stylesheet" type="text/css" href="${root}/CSS/base.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/TableHeader.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/PopupLayer.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/toppage.css" />
+<c:set var="mode" value="<%=mode%>"/>
+<c:set var="root" value="${pageContext.request.contextPath}" scope="session" />
 
+<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/base.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/TableHeader.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/PopupLayer.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/toppage.css" />
 
 <script src="${root}/js/Rollover.js"></script>
 <script src="${root}/js/MoveTo.js"></script>
 <script src="${root}/js/toppage.js"></script>
 
-
 </head>
 <body>
 
+<div id="pop" ></div>
 
-
-<div id="pop" > 빈레이어 </div>
 <form name="main" onsubmit="return false;" method="post" >
-
+${root} ${mode} <%= receivedDevice %>
+<input type="text" name="condev" value="">
 <table id="page_container">
 	<tr>
 		<td rowspan=2></td>

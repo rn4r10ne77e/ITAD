@@ -7,11 +7,13 @@
 	int parent = -1;
 	String Table;
 	
-	parent = Integer.parseInt(request.getParameter("parent"));
-	Table = request.getParameter("TableName");
+	if( request.getParameter("parent") != null && request.getParameter("parent") != "") parent = Integer.parseInt(request.getParameter("parent").toString());
 	
+	Table = request.getParameter("TableName");
+
 	Dcode subcate = new Dcode("subcate");
 	subcate.CodeLoad(Table, 2, parent);
+	
 %>
 
 <c:set value="<%=subcate%>" var="subcate" scope="page" />

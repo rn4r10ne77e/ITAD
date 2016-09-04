@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title></title>
+<script src="./js/Rollover.js"></script>
 <script language=Javascript>
 window.onload = function()
 {
@@ -27,13 +28,15 @@ window.onload = function()
 		}
 		usr.Disconnect();
 	%>
-
+	document.Check.condev.value = check_device();
 	document.Check.submit();
 }
 </script>
 </head>
 <body>
 
-<form name=Check action=<%= url %> method=post></form>
+<form name=Check action=<%= url %> method=post>
+<input type="hidden" name="condev">
+</form>
 </body>
 </html>

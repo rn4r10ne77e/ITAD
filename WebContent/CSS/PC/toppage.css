@@ -21,9 +21,32 @@
 	border-spacing:0; 
 	padding:0;
 }
+#content_left{
+	
+	vertical-align:top;
+	margin:auto;
+	width:140px;
+	height:100%;
+
+}
+#head_bar{
+	width:100%
+}
+#menu_icon{
+	
+	display:none;
+	width:35px;
+	height:35px;
+	float:left;
+
+}
 
 <!--- 정리 필요 ---->
-
+body, textarea, pre, input, select, option
+{
+	font-family:'fixedsys','돋움';
+	font-size:10pt;
+}
 #ulid, #ulname, #ulstrdept{
 	
 	width:90px;
@@ -40,7 +63,13 @@
 }
 
 <!------------------------------------------------------------------------------------------------------------------------->
-
+.infobox
+{
+	border-radius: 5px;
+	border:1px solid grey;
+	box-shadow:2px 2px 4px #c0c0c0;
+	padding:10px;
+}
 .logo_field{
 	
 	height:10;
@@ -68,3 +97,11 @@
 	font-family:Arial; 
 	font-weight:bold;
 }
+ .bottomtitle
+{
+	background-color:#1e2160;
+ 	height:18px;
+ 	line-height:18px; 
+	text-align:right;
+	vertical-align:center;
+ }

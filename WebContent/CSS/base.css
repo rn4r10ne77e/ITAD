@@ -1,8 +1,4 @@
-body, textarea, pre, input, select, option
-{
-	font-family:'fixedsys','µ¸¿ò';
-	font-size:11pt;
-}
+
 body{
 	overflow:scroll;
 }
@@ -23,13 +19,7 @@ th
 	padding:1;
 	// Width:110px; 
 }
-.infobox
-{
-	border-radius: 5px;
-	border:1px solid grey;
-	box-shadow:2px 2px 4px #c0c0c0;
-	padding:10px;
-}
+
 table
 {
 	boder-collapse:collapse;
@@ -88,14 +78,7 @@ input
 }
 
 
- .bottomtitle
-{
-	background-color:#1e2160;
- 	height:18px;
- 	line-height:18px; 
-	text-align:right;
-	vertical-align:center;
- }
+
  .infoheader
  {
  	background-color:white;

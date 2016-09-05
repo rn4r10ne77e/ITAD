@@ -5,8 +5,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title></title>
-<script src="./js/Rollover.js"></script>
+
 <script language=Javascript>
+
+function check_device(){
+	
+	var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+	var device_name = '';
+	
+	for (var word in mobileKeyWords){
+		if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+			device_name = mobileKeyWords[word];
+			break;
+		}
+	}
+	return device_name
+}
+
 window.onload = function()
 {
 	<%
@@ -29,6 +44,7 @@ window.onload = function()
 		usr.Disconnect();
 	%>
 	
+	document.Check.connDev.value = check_device();
 	document.Check.submit();
 }
 </script>
@@ -36,7 +52,7 @@ window.onload = function()
 <body>
 
 <form name=Check action=<%= url %> method=post>
-<input type="hidden" name="condev">
+<input type="hidden" name="connDev">
 </form>
 </body>
 </html>

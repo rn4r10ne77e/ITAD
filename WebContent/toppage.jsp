@@ -21,7 +21,7 @@
 <c:set var="mode" value="<%=mode%>"/>
 <c:set var="root" value="${pageContext.request.contextPath}" scope="session" />
 
-<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/base.css" />
+<link rel="stylesheet" type="text/css" href="${root}/CSS/base.css" />
 <link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/toppage.css" />
 
 <script src="${root}/js/toppage.js"></script>
@@ -35,12 +35,15 @@
 
 <table id="page_container">
 	<tr>
-		<td rowspan=2></td>
+		<td id="left_blank_area" rowspan=2></td>
 		<td id="contents_area">
 			<table id="content">
 				<tr>
-					<td class="logo_field" colspan=2>
+					<td class="logo_field" colspan=2 >
+					<div id="head_bar">
+						<img id="menu_icon" src="${root}/images/menu_icon.png" >
 						<img class="logo_img" src="${root}/images/logo.png" >
+					</div>
 					</td>
 				</tr>
 				<tr>
@@ -51,8 +54,8 @@
 					</td>
 				</tr>
 				<tr>
-				
+				<td id="content_left"><br>
 					<%@ include file="left.jsp" %>
 					
-					
+					</td>
 					<td valign=top height="100%" ><br>

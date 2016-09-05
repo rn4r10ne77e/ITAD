@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
-	<td valign=top width="150" height="100%" align=center><br>
+	
 		<table class="infobox" width="135">
 		<tr>
 		<td align=left width="120">
@@ -21,10 +21,11 @@
 		<td align=left width="120">
 		&nbsp;&nbsp;&nbsp; 사용자 메뉴 <br><br>
 		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'UserList.jsp')">추가 및 조회</a><br>
+		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'PCList_mobile.jsp')">추가 및 조회</a><br>
 		</td>
 		</tr>
 		</table><br>
 		 
 	
 		<!-- <a style="cursor:pointer;" onclick="Move(this,'Setup.jsp')"> 설정 </a><br><br>  -->
-	</td>
+	

@@ -1,56 +1,53 @@
 
 /* Mobile Version */
 
+
+table,td{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+
+
 #page_container{
-	
+
 	height:100%;
 	width:100%;
-	border-spacing:0;
-	padding:0;
+	
 }
 #contents_area{
 
 	vertical-align:top;
-	width:100%;				/*   Mobile    */
-	border-spacing:0;		/*   Mobile    */
-	padding:0; 				/*   Mobile    */
-/*	border:1px solid black; 
-	border-left: 1px solid; 
-	border-right: 1px solid; 
-	border-top: 1px solid; 
-	border-bottom: 0px none;  		 Mobile			*/
+	width:100%;				
 }
+#foot_area{
+
+	vertical-align:bottom;
+	width:100%;				
+}
+
 #content{
-	
-	width:100%;					/* Mobile */ 
-	border-spacing:0; 
-	padding:0;
+
+	width:100%;				
+
 }
 #content_left{
 	
-	display:none;    			 /* Mobile */
-	border-spacing:0;             /* Mobile */
-	padding:0;					/*   Mobile    */
-	vertical-align:top;
-	margin:auto;
-	width:140px;
-	height:100%;
-
+	display:none;    		
 }
 #head_bar{
 	width:100%
 }
 #menu_icon{
 	
-	/* display:none; 	        	  Mobile             */	 
 	width:35px;
 	height:35px;
 	float:left;
-	vertical-align:bottom;
+
 }
 
-/*- 정리 필요 --*/
-
+/*   정리   */
 #ulid, #ulname, #ulstrdept{
 	
 	width:90px;
@@ -67,14 +64,20 @@
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
-
+.infobox
+{
+	
+	border-radius: 5px;
+	border:1px solid grey;
+	box-shadow:2px 2px 4px #c0c0c0;
+	padding:10px;
+}
 .left_blank_area, .right_black_area{
-	display:none;					/* Mobile */
-	border-spacing:0;             	/* Mobile */
-	padding:0						/* Mobile */
+	display:none;			
+
 }
 .logo_field{
-	
+
 	height:15px;
 	bgcolor:#ffffff;
 }
@@ -90,7 +93,6 @@
 .toptitle_field{
 	
 	background-color:#1e2160;
- 	valign:bottom; 
  	height:10;
 }
 .toptitle_font{
@@ -100,3 +102,12 @@
 	font-family:Arial; 
 	font-weight:bold;
 }
+ .bottomtitle
+{
+	width:100%;
+	background-color:#1e2160;
+ 	height:18px;
+ 	line-height:18px; 
+	text-align:right;
+
+ }

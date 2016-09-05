@@ -11,7 +11,7 @@
 		</td>
 	</tr>
 </table>
-
+<input type="hidden" name="connDev" id="connDev" >
 </form>
 
 </body>

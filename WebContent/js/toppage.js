@@ -106,7 +106,16 @@ function check_device(){
 	}
 	return device_name
 }
+function Secure(){
+	
+	var LoginUser = getInnerajax( "/ITAD/PeacePages/ppGetSession.jsp","")
 
+	if( LoginUser.indexOf('in') == -1 )
+	{
+		alert('세션이 만료되었거나 잘못된 접근 입니다.\n로그인 페이지로 이동 합니다.');
+		location.href="../Login.jsp"
+	}
+}
 /*-------------------------------------------------- 팝업 관련 함수  --------------------------------------------------*/
 
 function VendorAdd( filename )

@@ -1,0 +1,102 @@
+
+/* Mobile Version */
+
+#page_container{
+	
+	height:100%;
+	width:100%;
+	border-spacing:0;
+	padding:0;
+}
+#contents_area{
+
+	vertical-align:top;
+	width:100%;				/*   Mobile    */
+	border-spacing:0;		/*   Mobile    */
+	padding:0; 				/*   Mobile    */
+/*	border:1px solid black; 
+	border-left: 1px solid; 
+	border-right: 1px solid; 
+	border-top: 1px solid; 
+	border-bottom: 0px none;  		 Mobile			*/
+}
+#content{
+	
+	width:100%;					/* Mobile */ 
+	border-spacing:0; 
+	padding:0;
+}
+#content_left{
+	
+	display:none;    			 /* Mobile */
+	border-spacing:0;             /* Mobile */
+	padding:0;					/*   Mobile    */
+	vertical-align:top;
+	margin:auto;
+	width:140px;
+	height:100%;
+
+}
+#head_bar{
+	width:100%
+}
+#menu_icon{
+	
+	/* display:none; 	        	  Mobile             */	 
+	width:35px;
+	height:35px;
+	float:left;
+	vertical-align:bottom;
+}
+
+/*- 정리 필요 --*/
+
+#ulid, #ulname, #ulstrdept{
+	
+	width:90px;
+	height:20px;
+}
+#pop{
+	
+	background-color:white;
+	position:fixed;
+	
+    margin: 0px auto;
+    border:1px solid black;
+	display:none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.left_blank_area, .right_black_area{
+	display:none;					/* Mobile */
+	border-spacing:0;             	/* Mobile */
+	padding:0						/* Mobile */
+}
+.logo_field{
+	
+	height:15px;
+	bgcolor:#ffffff;
+}
+.logo_img{
+	
+	float:right;
+}
+.logo_font{
+	
+	text-align:right;
+	text-color:white;
+}
+.toptitle_field{
+	
+	background-color:#1e2160;
+ 	valign:bottom; 
+ 	height:10;
+}
+.toptitle_font{
+	
+	font-size:16pt; 
+	color:white; 
+	font-family:Arial; 
+	font-weight:bold;
+}

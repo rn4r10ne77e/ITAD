@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%
-	String receivedDevice = request.getParameter("condev");
+	String receivedDevice = request.getParameter("connDev");
 	String Array[]={"iPhone", "iPod", "BlackBerry", "Android", "Windows CE", "LG", "MOT", "SAMSUNG", "SonyEricsson"}, mode="PC";
 
 	if( receivedDevice != null )
@@ -23,12 +23,8 @@
 <c:set var="root" value="${pageContext.request.contextPath}" scope="session" />
 
 <link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/base.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/TableHeader.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/PopupLayer.css" />
 <link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/toppage.css" />
 
-<script src="${root}/js/Rollover.js"></script>
-<script src="${root}/js/MoveTo.js"></script>
 <script src="${root}/js/toppage.js"></script>
 
 </head>
@@ -37,8 +33,7 @@
 <div id="pop" ></div>
 
 <form name="main" onsubmit="return false;" method="post" >
-${root} ${mode} <%= receivedDevice %>
-<input type="text" name="condev" value="">
+
 <table id="page_container">
 	<tr>
 		<td rowspan=2></td>

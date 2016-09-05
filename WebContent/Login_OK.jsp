@@ -28,7 +28,7 @@ window.onload = function()
 		}
 		usr.Disconnect();
 	%>
-	document.Check.condev.value = check_device();
+	
 	document.Check.submit();
 }
 </script>

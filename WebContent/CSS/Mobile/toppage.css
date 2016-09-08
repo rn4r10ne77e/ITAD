@@ -1,8 +1,8 @@
 
 /* Mobile Version */
 
+table, td{
 
-table,td{
 	border:0px;
 	margin:0px;
 	padding:0px;
@@ -14,12 +14,13 @@ table,td{
 
 	height:100%;
 	width:100%;
-	
+
 }
 #contents_area{
 
 	vertical-align:top;
-	width:100%;				
+	width:100%;
+
 }
 #foot_area{
 

@@ -423,6 +423,7 @@ var ProgressBar = (function ProgressBarClosure() {
       }
       this.visible = false;
       this.bar.classList.add('hidden');
+      //document.getElementById('divbody').classList.remove('loadingInProgress');
       document.body.classList.remove('loadingInProgress');
     },
 
@@ -431,6 +432,7 @@ var ProgressBar = (function ProgressBarClosure() {
         return;
       }
       this.visible = true;
+      //document.getElementById('divbody').classList.add('loadingInProgress');
       document.body.classList.add('loadingInProgress');
       this.bar.classList.remove('hidden');
     }
@@ -7197,7 +7199,7 @@ function webViewerInitialized() {
   fileInput.setAttribute('type', 'file');
   fileInput.oncontextmenu = noContextMenuHandler;
   document.body.appendChild(fileInput);
-
+  
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     document.getElementById('openFile').setAttribute('hidden', 'true');
     document.getElementById('secondaryOpenFile').setAttribute('hidden', 'true');

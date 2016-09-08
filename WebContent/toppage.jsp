@@ -13,18 +13,18 @@
 
 <!DOCTYPE html>
 <head>
-<title>KAMS DBschenker Korea Asset Management Program</title>
-
-<meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-
-<c:set var="mode" value="<%=mode%>"/>
-<c:set var="root" value="${pageContext.request.contextPath}" scope="session" />
-
-<link rel="stylesheet" type="text/css" href="${root}/CSS/base.css" />
-<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/toppage.css" />
-
-<script src="${root}/js/toppage.js"></script>
+	<title>KAMS DBschenker Korea Asset Management Program</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	
+	<c:set var="mode" value="<%=mode%>"/>
+	<c:set var="root" value="${pageContext.request.contextPath}" scope="session" />
+	
+	<link rel="stylesheet" type="text/css" href="${root}/CSS/base.css" />
+	<link rel="stylesheet" type="text/css" href="${root}/CSS/${mode}/toppage.css" />
+	
+	<script src="${root}/js/toppage.js"></script>
 
 </head>
 <body>

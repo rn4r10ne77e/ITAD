@@ -58,8 +58,6 @@
 <input type=hidden name="hi_category" value="<%=category%>">
 <input type=hidden name="hi_subcate"  value="<%=subcategory%>">
 
-현재 등록된 장비 리스트 입니다. 목록에서 장비를 선택 하면 편집 화면으로 이동 합니다.<br><br>
-
 <table class="infobox" style="padding:1px;width:100%;border-spacing: 10px 4px;">
 <tr><td align=left style="border-bottom:1px solid grey;">검색 조건</td></tr>
 

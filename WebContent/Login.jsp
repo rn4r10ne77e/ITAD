@@ -10,6 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=Edge; text/html;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 </head>
+<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/PC/toppage.css" >
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/CSS/base.css" >
 <body>
 

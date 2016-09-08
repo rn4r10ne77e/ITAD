@@ -15,13 +15,22 @@
 		</tr>
 		</table><br>
 		
+		<table class="infobox" width="135">
+		<tr>
+		<td align=left width="120">
+
+		&nbsp;&nbsp;&nbsp; 레포트 메뉴 <br><br>
+		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'Enrollment.jsp')">자산 폐기</a><br><br>
+		
+		</td>
+		</tr>
+		</table><br>
 
 		<table class="infobox" width="135">
 		<tr>
 		<td align=left width="120">
 		&nbsp;&nbsp;&nbsp; 사용자 메뉴 <br><br>
 		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'UserList.jsp')">추가 및 조회</a><br>
-		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'PCList_mobile.jsp')">추가 및 조회</a><br>
 		</td>
 		</tr>
 		</table><br>

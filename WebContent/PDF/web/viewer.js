@@ -7163,6 +7163,8 @@ function validateFileURL(file) {
       return;
     }
     var fileOrigin = new URL(file, window.location.href).origin;
+    
+    document.getElementById('test').innerHTML = fileOrigin;
     // Removing of the following line will not guarantee that the viewer will
     // start accepting URLs from foreign origin -- CORS headers on the remote
     // server must be properly configured.

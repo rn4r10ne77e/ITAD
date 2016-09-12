@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
-<!-- 2016-08-24T11:56:34 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.beta-v201607260811 using JasperReports Library version 6.3.1  -->
+<!-- 2016-09-12T17:22:41 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FixedAssetDesposalForm" pageWidth="595" pageHeight="842" columnWidth="525" leftMargin="50" rightMargin="20" topMargin="50" bottomMargin="20" uuid="ca03c2eb-4def-4c6e-87c6-715f9f00dd3d">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ITAD"/>
@@ -78,7 +78,7 @@ FROM "EQP" WHERE IDX=$P{IDX}]]>
 			</staticText>
 			<image>
 				<reportElement x="0" y="1" width="160" height="34" uuid="b303dcda-b373-4ab8-9160-2f64e2a92dde"/>
-				<imageExpression><![CDATA["Reports/FixedAssetDesposalForm/dbmark.png"]]></imageExpression>
+				<imageExpression><![CDATA["dbmark.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>

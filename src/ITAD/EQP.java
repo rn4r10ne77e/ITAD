@@ -2,6 +2,8 @@ package ITAD;
 
 import java.util.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 import ITAD.DataStructure.EQPdata;
 import ITAD.DataStructure.HISTORYDETAIL;
 import ITAD.DataStructure.NameTable;
@@ -24,6 +26,7 @@ public class EQP extends DBConn {
 		data.setTAGMNDept(DrawSelectTag("MNDept", "LOCXDEPT", 2));
 		data.setTAGvendor(DrawSelectTag("vendor","VENDORS"));
 	}
+
 	public int InsertEQPdata(int USRidx, int PCidx, int addwho )
 	{
 		String qry, number;

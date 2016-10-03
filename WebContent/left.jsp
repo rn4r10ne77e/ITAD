@@ -20,7 +20,7 @@
 		<td align=left width="120">
 
 		&nbsp;&nbsp;&nbsp; 레포트 메뉴 <br><br>
-		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'Enrollment.jsp')">자산 폐기</a><br><br>
+		&nbsp;&nbsp;&nbsp;<a style="cursor:pointer;" onclick="Move(this,'Report.jsp')">자산 폐기</a><br><br>
 		
 		</td>
 		</tr>

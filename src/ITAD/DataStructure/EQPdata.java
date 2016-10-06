@@ -18,7 +18,7 @@ public class EQPdata {
 	int location;	String STRlocation;	String TAGlocation;
 	int vendor;		String STRvendor; 	String TAGvendor;
 	int purpose=0;	String STRpurpose;	String TAGpurpose;
-	int status=0;	String STRstatus;	String TAGstatus;
+	int status=1;	String STRstatus;	String TAGstatus;
 	
 	long price;
 

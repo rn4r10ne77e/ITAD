@@ -79,9 +79,6 @@ public class S extends HttpServlet {
 		if( usr.LoadUserDataByMobile(reqPhone) ) json.put("success", 1);
 		else json.put("success", 0);
 		
-		
-		
-	
 		PrintWriter out = response.getWriter();
 
 		out.print(json);

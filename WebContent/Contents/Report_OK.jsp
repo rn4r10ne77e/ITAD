@@ -7,6 +7,8 @@
 	String RealRootPath, PDFoutputPath;	
 	int uidx = 0;
 	
+	
+	/*
 	out.print(request.getRealPath("/"));
 	out.print("<br/>");
 	
@@ -16,15 +18,15 @@
 	
 	loginUser.LoadUserData(uidx);
 
-	parameters.put("IDX", Items[0] );
-/*
+	parameters.put( "IDX", Items[0] );
+
 	jr.setParameter(parameters);
 	jr.setRealRootPath(request.getRealPath("/"));
 	jr.setReportName("FixedAssetDesposalForm");
 	jr.setUserID(loginUser.getID());
 	
 	jr.ProgressConvert();
-*/
+	
 	if (request.getParameter("SelectedItems") != null)
 	{
 		for (String Item : Items)
@@ -32,10 +34,10 @@
 			out.print(Item + "<br/>");
 		}
 	}
+	*/
+	
+	
+	
 %>
-
-<script>
-	windows.print
-</script>
 
 <%@ include file="../bottompage.jsp" %>

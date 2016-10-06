@@ -1,14 +1,13 @@
 <%@ include file="../toppage.jsp" %>
 <%@ page pageEncoding="UTF-8" %>
 <%
-	Jreport jr = new Jreport();
+	Test jr = new Test();
 	User loginUser = new User();
 	Map<String, Object> parameters = new HashMap<String, Object>();
 	String RealRootPath, PDFoutputPath;	
 	int uidx = 0;
 	
-	
-	/*
+
 	out.print(request.getRealPath("/"));
 	out.print("<br/>");
 	
@@ -34,10 +33,6 @@
 			out.print(Item + "<br/>");
 		}
 	}
-	*/
-	
-	
-	
 %>
 
 <%@ include file="../bottompage.jsp" %>

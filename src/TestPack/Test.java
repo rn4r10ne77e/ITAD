@@ -1,4 +1,4 @@
-package JASPERREPORT;
+package TestPack;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
 
 
-public class Jreport {
+public class Test {
 	
 	String RealRootPath = null;
 	String ReportName = null;
@@ -33,7 +33,7 @@ public class Jreport {
     JasperPrint print = null;
     DBConn conn = null;
     
-    public Jreport()
+    public Test()
     {
     	
     }
@@ -76,14 +76,8 @@ public class Jreport {
 	{
 		String reportSrcFile = RealRootPath + "Reports/" + ReportName + "/" + ReportName + ".jrxml";
 		String reportDstFile = RealRootPath + "Reports/Output/" + seqNo + ReportName + ".pdf";
-        
-        JasperReport jasperReport = null;
-        JasperPrint print = null;
-        
-        
+
         DBConn conn = new DBConn(false);
-        
-        Jreport jrprt = new Jreport();
         
 		try 
 		{
@@ -99,17 +93,17 @@ public class Jreport {
 	        ExporterInput EI = new SimpleExporterInput(print);
 	        
 	        exporter.setExporterInput(EI);
-	        /*
+
 	        OutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput( reportDstFile );
 
 	        exporter.setExporterOutput(exporterOutput);
 
 	        SimplePdfExporterConfiguration configuration = new SimplePdfExporterConfiguration();
-
+	        
 	        exporter.setConfiguration(configuration);
 	        
 	        exporter.exportReport();
-	        */
+
 
 		}
 		catch (Exception e) 
